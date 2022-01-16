@@ -1,0 +1,46 @@
+Batch Del File String
+
+Delete Savegames
+C:\CAVEDOG\TOTALA\SAVEGAME
+
+Trash Cleaner
+Folders
+C:\CAVEDOG\TOTALA\log
+C:\CAVEDOG\TOTALA\BACKUP
+C:\CAVEDOG\TOTALA\BT
+C:\CAVEDOG\TOTALA\CC
+C:\CAVEDOG\TOTALA\BTbackup
+
+Files
+C:\CAVEDOG\TOTALA\Taccread.txt
+C:\CAVEDOG\TOTALA\BTreadme31.txt
+C:\CAVEDOG\TOTALA\BTreadme.txt
+C:\CAVEDOG\TOTALA\errorlog.txt
+C:\CAVEDOG\TOTALA\Taccread.doc
+C:\CAVEDOG\TOTALA\BTreadme31.doc
+C:\CAVEDOG\TOTALA\BTreadme.doc
+C:\CAVEDOG\TOTALA\setup.ini
+C:\CAVEDOG\TOTALA\Tabtunst.exe
+C:\CAVEDOG\TOTALA\setup.exe
+
+:Selection10
+::Trash Files
+if exist C:\CAVEDOG\TOTALA\Taccread.txt del C:\CAVEDOG\TOTALA\Taccread.txt
+if exist C:\CAVEDOG\TOTALA\BTreadme31.txt del C:\CAVEDOG\TOTALA\BTreadme31.txt
+if exist C:\CAVEDOG\TOTALA\BTreadme.txt del C:\CAVEDOG\TOTALA\BTreadme.txt
+if exist C:\CAVEDOG\TOTALA\Taccread.doc del C:\CAVEDOG\TOTALA\Taccread.doc
+if exist C:\CAVEDOG\TOTALA\BTreadme31.doc del C:\CAVEDOG\TOTALA\BTreadme31.doc
+if exist C:\CAVEDOG\TOTALA\BTreadme.doc del C:\CAVEDOG\TOTALA\BTreadme.doc
+if exist C:\CAVEDOG\TOTALA\setup.ini del C:\CAVEDOG\TOTALA\setup.ini
+if exist C:\CAVEDOG\TOTALA\Tabtunst.exe del C:\CAVEDOG\TOTALA\Tabtunst.exe
+if exist C:\CAVEDOG\TOTALA\setup.exe del C:\CAVEDOG\TOTALA\setup.exe
+if exist C:\CAVEDOG\TOTALA\errorlog.txt del C:\CAVEDOG\TOTALA\errorlog.txt
+::Trash Folders
+if exist C:\CAVEDOG\TOTALA\log rd /s /q C:\CAVEDOG\TOTALA\log
+if exist C:\CAVEDOG\TOTALA\BACKUP rd /s /q C:\CAVEDOG\TOTALA\BACKUP
+if exist C:\CAVEDOG\TOTALA\BT rd /s /q C:\CAVEDOG\TOTALA\BT
+if exist C:\CAVEDOG\TOTALA\CC rd /s /q C:\CAVEDOG\TOTALA\CC
+if exist C:\CAVEDOG\TOTALA\BTbackup rd /s /q C:\CAVEDOG\TOTALA\BTbackup
+if exist C:\CAVEDOG\TOTALA\SAVEGAME rd /s /q C:\CAVEDOG\TOTALA\SAVEGAME
+Echo TA Dir cleanup complete! && pause
+GOTO :MENU

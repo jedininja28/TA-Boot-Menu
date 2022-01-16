@@ -1,0 +1,32 @@
+TA Doc Reader
+
+File List
+
+CALL %SystemDrive%\CAVEDOG\TOTALA\Docs\"TA Manual.pdf"
+CALL %SystemDrive%\CAVEDOG\TOTALA\Docs\"TA Core Contingency Readme.txt"
+CALL %SystemDrive%\CAVEDOG\TOTALA\Docs\"TA Battle Tactics Readme.txt"
+CALL %SystemDrive%\CAVEDOG\TOTALA\Docs\"TA 31 Patch Readme.txt"
+CALL %SystemDrive%\CAVEDOG\TOTALA\Docs\"TA 391 Patch Readme.txt"
+CALL %SystemDrive%\CAVEDOG\TOTALA\Docs\"TAR Storyline.txt"
+CALL %SystemDrive%\CAVEDOG\TOTALA\Docs\"TA Cheats.txt"
+CALL %SystemDrive%\CAVEDOG\TOTALA\Docs\"TAE Readme.txt"
+CALL %SystemDrive%\CAVEDOG\TOTALA\Docs\"TA Unit Editor Readme.txt"
+CALL %SystemDrive%\CAVEDOG\TOTALA\Docs\"TA Ai Editor Readme.txt"
+
+If exist %SystemDrive%\CAVEDOG\TOTALA\Docs\TA Manual.pdf CALL C:\CAVEDOG\TOTALA\Docs\"TA Manual.pdf " ELSE GOTO :tabmdrerror
+If exist %SystemDrive%\CAVEDOG\TOTALA\Docs\TA Core Contingency Readme.txt CALL C:\CAVEDOG\TOTALA\Docs\"TA Core Contingency Readme.txt" ELSE GOTO :tabmdrerror
+If exist %SystemDrive%\CAVEDOG\TOTALA\Docs\TA Battle Tactics Readme.txt CALL C:\CAVEDOG\TOTALA\Docs\"TA Battle Tactics Readme.txt" ELSE GOTO :tabmdrerror
+If exist %SystemDrive%\CAVEDOG\TOTALA\Docs\TA 31 Patch Readme.txt CALL C:\CAVEDOG\TOTALA\Docs\"TA 31 Patch Readme.txt" ELSE GOTO :tabmdrerror
+If exist %SystemDrive%\CAVEDOG\TOTALA\Docs\TA 391 Patch Readme.txt CALL C:\CAVEDOG\TOTALA\Docs\"TA 391 Patch Readme.txt" ELSE GOTO :tabmdrerror
+If exist %SystemDrive%\CAVEDOG\TOTALA\Docs\TA:R Storyline.txt CALL C:\CAVEDOG\TOTALA\Docs\"TAR Storyline.txt" ELSE GOTO :tabmdrerror
+If exist %SystemDrive%\CAVEDOG\TOTALA\Docs\TA Cheats.txt CALL C:\CAVEDOG\TOTALA\Docs\"TA Cheats.txt" ELSE GOTO :tabmdrerror
+If exist %SystemDrive%\CAVEDOG\TOTALA\Docs\TAE Readme.txt CALL C:\CAVEDOG\TOTALA\Docs\"TAE Readme.txt" ELSE GOTO :tabmdrerror
+::If exist %SystemDrive%\CAVEDOG\TOTALA\Docs\TA Unit Editor Readme.txt CALL C:\CAVEDOG\TOTALA\Docs\"TA Unit Editor Readme.txt" ELSE GOTO :tabmdrerror
+::If exist %SystemDrive%\CAVEDOG\TOTALA\Docs\TA Ai Editor Readme.txt CALL C:\CAVEDOG\TOTALA\Docs\"TA Ai Editor Readme.txt" ELSE GOTO :tabmdrerror
+
+ELSE GOTO :tabmdrerror
+
+:tabmdrerror
+ECHO File does not exist, get a new one!
+pause 
+goto :tabmdr
